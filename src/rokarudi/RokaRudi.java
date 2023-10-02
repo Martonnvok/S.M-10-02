@@ -13,10 +13,10 @@ public class RokaRudi {
         for (int i = 0; i < 3; i++) {
             lapok(lapok);
             beolvasas(vLap);
-            kever();
+            kever(vLap);
         }
 
-        kiir();
+        kiir(lapok);
     }
 
     private static String[] feltolt() {
@@ -47,15 +47,31 @@ public class RokaRudi {
             System.out.print("Kérek egy oszlopot (1-3): ");
             vLap = sc.nextInt();
         } while (vLap >= 3 && vLap <= 1);
-       
-    }
-
-    private static void kever() {
 
     }
 
-    private static void kiir() {
+    private static void kever(int vLap) {
 
+        switch (vLap) {
+            case 1:
+                for (int i = 0; i < 10; i++) {
+
+                }
+            case 2:
+                for (int i = 0; i < 10; i++) {
+
+                }
+            case 3:
+                for (int i = 0; i < 10; i++) {
+
+                }
+
+        }
+
+    }
+
+    private static void kiir(String tomb[]) {
+        System.out.println("Választott lap: "+ tomb[11]);
     }
 
 }
